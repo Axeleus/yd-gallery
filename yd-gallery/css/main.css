@@ -1,0 +1,81 @@
+.image-item{width:99%;display:inline-block;float:left}
+.image-item .inner-item{margin:5px 5px 0 0}
+@media (min-width: 768px){.image-item{width:19%}}
+@media (min-width: 992px){.image-item{width:33%}}
+@media (min-width: 1200px){.image-item{width:33%}}
+.cover-image{position:absolute;z-index:0;opacity:1;background-size:cover;content:'';width:100%;height:100%;left:0;top:0;background-position:50% 50%;}
+.row:before, .row:after{content: " ";display: table;}
+.row:after{clear: both;}
+#ydg_post .button .dashicons{margin-top:5px}
+#ydg-gallery{margin:25px 0}
+#ydg-gallery .card .context {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding:22px 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#ydg-gallery .card .context .tile-action {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 4px 16px;
+    font-size: 20px;
+}
+#ydg-gallery .card .context .tile-action.right {
+    left: auto;
+    right: 0;
+}
+#ydg-gallery .card.card-black a {
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+}
+#ydg-gallery .card.card-black a:hover, #ydg-gallery .card.card-black a:active, #ydg-gallery .card.card-black a:focus {
+    color: #fff;
+    opacity: .7;
+    text-decoration: none;
+}
+#ydg-gallery .card {
+    width: 100%;
+    position:relative;
+    margin:0;
+    padding:0;
+    border:0;
+    background-color:#fff;
+    box-shadow:0 2px 5px -1px rgba(0, 0, 0, 0.26);
+    overflow:hidden;
+	font-size: 18px;
+    line-height: 29px;
+}
+#ydg-gallery .card.card-image {
+    height: 250px;
+}
+#ydg-gallery .card.tile {
+    border-radius: 0;
+    box-shadow: none;
+}
+#ydg-gallery .card.card-black {
+    background-color: #000000;
+    color: #ffffff;
+}
+#ydg-gallery .bg-image.bg-opaque8:before {
+    opacity: .8;
+}
+#ydg-gallery .bg-image:before {
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+    background-size: cover;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-position: 50% 50%;
+}
