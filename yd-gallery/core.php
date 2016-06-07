@@ -35,11 +35,13 @@ function ydg_init_front_scripts(){
 }
 add_action('wp', 'ydg_init_front_scripts');
 
-function ydg_shortcode() {
+function ydg_shortcode( $atts ) {
 
     global $post;
 
     if( ! is_singular( array('post', 'page') ) ) return false;
+
+    $atts = shortcode_atts( array('filter' => 0), $atts, 'ydg-gallery' );
 
     $gallery = get_post_meta($post->ID, 'gallery', true);
 
@@ -51,7 +53,7 @@ function ydg_shortcode() {
     ?>
     <div class="fotorama-listing">
         <div class="fotorama-wrap">
-            <div class="fotorama" data-width="900" data-ratio="3/2" data-nav="thumbs" data-thumbheight="64" data-allowfullscreen="native">
+            <div class="fotorama <?php echo $atts['filter'] == 1 ? 'fotorama-set-filter' : '' ?>" data-width="900" data-ratio="3/2" data-nav="thumbs" data-thumbheight="64" data-allowfullscreen="native">
                 <?php
 
                 foreach( $args as $key => $val ) {

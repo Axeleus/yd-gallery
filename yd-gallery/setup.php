@@ -56,7 +56,7 @@ function ydg_metabox_post(){
 
 	add_meta_box(
 		"ydg_post",
-		'Опции',
+		'Галерея',
 		"ydg_call_gallery",
 		array('post', 'page'),
 		'normal',
@@ -70,9 +70,7 @@ function ydg_call_gallery(){
 
 	global $post;
 	?>
-
-	<h2>Галерея</h2>
-	<p class="description">Добавьте изображения в галерею</p>
+	<p class="description">Добавьте изображения в галерею. Для вставки в пост, используйте [ydg-gallery], наложить фильтр в полноэкранном режиме: [ydg-gallery filter="1"]</p>
 
 	<?php
 

@@ -13,5 +13,14 @@
     font-weight:normal !important;
     padding: 0 !important;
 }
-.fotorama .fotorama__html{background-image:url('../img/pattern.png')}
+.fotorama-set-filter .fotorama__html{background-image:url('../img/pattern.png')}
 .fotorama-listing .fotorama__html{background-image:none}
+
+@media (max-width: 480px){
+    .fotorama .inner-content{display:none}
+}
+@media (max-width: 767px){
+    .fotorama .inner-content{padding:5px 10px 0;}
+    .fotorama .inner-content h2{font-size:13px;line-height:21px}
+    .fotorama .inner-content p{font-size:12px;line-height:16px}
+}
